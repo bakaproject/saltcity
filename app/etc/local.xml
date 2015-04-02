@@ -41,8 +41,8 @@
             <default_setup>
                 <connection>
                     <host><![CDATA[localhost]]></host>
-                    <username><![CDATA[scbs]]></username>
-                    <password><![CDATA[hJWpzID2w0eez91U]]></password>
+                    <username><![CDATA[store20]]></username>
+                    <password><![CDATA[ZoImosK2UF14TI7n]]></password>
                     <dbname><![CDATA[scbs_store]]></dbname>
                     <active>1</active>
                 </connection>
