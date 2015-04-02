@@ -1,0 +1,6 @@
+1.0 - Initial release
+1.1 - Added tracking support
+1.2 - Changed standard Fedex to support tracking, so works on previous orders created
+1.3 - Fixed some issues with the tracking so that supports when no delivery address - this is a magento bug in 1.7 also.
+1.4	- Fixed issue around inaccurate rates when 'Add declared value' is enabled.
+1.5 - DIMSHIP-20 Fixed issue causing problem around accuracy of List and Account rate request types

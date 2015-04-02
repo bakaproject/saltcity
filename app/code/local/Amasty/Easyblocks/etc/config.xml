@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2010-2012 Amasty (http://www.amasty.com)
+* @package Amasty_Easyblocks
+*/
+-->
+<config>
+
+    <modules>
+        <Amasty_Easyblocks>
+            <version>1.0.4</version>
+        </Amasty_Easyblocks>
+    </modules>
+    
+    <admin>
+        <routers>
+            <ameasyblocks>
+                <use>admin</use>
+                <args>
+                    <module>Amasty_Easyblocks</module>
+                    <frontName>ameasyblocks</frontName>
+                </args>
+            </ameasyblocks>
+        </routers>
+    </admin>
+    
+    <frontend>
+        <translate>
+            <modules>
+                <Amasty_Easyblocks>
+                    <files>
+                        <default>Amasty_Easyblocks.csv</default>
+                    </files>
+                </Amasty_Easyblocks>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <ameasyblocks module="Amasty_Easyblocks">
+                    <file>ameasyblocks.xml</file>
+                </ameasyblocks>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <adminhtml>
+        <layout>
+            <updates>
+                <ameasyblocks>
+                    <file>ameasyblocks.xml</file>
+                </ameasyblocks>
+            </updates>
+        </layout>
+                                <menu>
+                                     <cms>
+                                        <children>
+                                            <ameasyblocks translate="title" module="ameasyblocks">
+                                                <title>Easy Content Blocks</title>
+                                                <sort_order>100</sort_order>
+                                                <children>
+                                                    <ameasyblocks_block translate="title" module="ameasyblocks">
+                                                        <title>Blocks</title>
+                                                        <action>ameasyblocks/adminhtml_block</action>
+                                                        <sort_order>10</sort_order>
+                                                    </ameasyblocks_block>
+                                                    <ameasyblocks_placeholder translate="title" module="ameasyblocks">
+                                                        <title>Placeholders</title>
+                                                        <action>ameasyblocks/adminhtml_placeholder</action>
+                                                        <sort_order>20</sort_order>
+                                                    </ameasyblocks_placeholder>
+                                                </children>
+                                            </ameasyblocks>
+                                        </children>
+                                     </cms>
+                                </menu>
+                                
+                                <translate>
+                                    <modules>
+                                        <Amasty_Easyblocks>
+                                            <files>
+                                                <default>Amasty_Easyblocks.csv</default>
+                                            </files>
+                                        </Amasty_Easyblocks>
+                                    </modules>
+                                </translate>
+
+                                <acl>
+                                    <resources>
+                                        <admin>
+                                            <children>
+                                                <cms>
+                                                    <children>
+                                                        <ameasyblocks translate="title" module="ameasyblocks">
+                                                            <title>Easy Content Blocks</title>
+                                                            <sort_order>100</sort_order>
+                                                            <children>
+                                                                <ameasyblocks_block translate="title" module="ameasyblocks">
+                                                                    <title>Easyblocks</title>
+                                                                    <sort_order>10</sort_order>
+                                                                </ameasyblocks_block>
+                                                                <ameasyblocks_placeholder translate="title" module="ameasyblocks">
+                                                                    <title>Placeholders</title>
+                                                                    <sort_order>20</sort_order>
+                                                                </ameasyblocks_placeholder>
+                                                            </children>
+                                                        </ameasyblocks>
+                                                    </children>
+                                                 </cms>
+                                            </children>
+                                        </admin>
+                                    </resources>
+                                </acl>
+    </adminhtml>
+    
+    <global>
+        <models>
+            <ameasyblocks>
+                <class>Amasty_Easyblocks_Model</class>
+                <resourceModel>ameasyblocks_mysql4</resourceModel>
+            </ameasyblocks>
+            
+            <ameasyblocks_mysql4>
+                <class>Amasty_Easyblocks_Model_Mysql4</class>
+                <entities>
+                    <block>
+                        <table>amasty_ameasyblocks_block</table>
+                    </block>
+                    <placeholder>
+                        <table>amasty_ameasyblocks_placeholder</table>
+                    </placeholder>
+                    <block_place>
+                        <table>amasty_ameasyblocks_block_place</table>
+                    </block_place>
+                </entities>
+            </ameasyblocks_mysql4>
+
+        </models>
+		<resources>
+             <ameasyblocks_setup>
+                <setup>
+                    <module>Amasty_Easyblocks</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ameasyblocks_setup>
+		    <ameasyblocks_write>
+		        <connection><use>core_write</use></connection>
+		    </ameasyblocks_write>
+		    <ameasyblocks_read>
+		        <connection><use>core_read</use></connection>
+		    </ameasyblocks_read>
+		</resources>
+        <blocks>
+            <ameasyblocks>
+                <class>Amasty_Easyblocks_Block</class>
+            </ameasyblocks>
+            
+        </blocks>
+        <helpers>
+            <ameasyblocks>
+                <class>Amasty_Easyblocks_Helper</class>
+            </ameasyblocks>
+        </helpers>
+    </global>
+    
+    
+    
+</config>

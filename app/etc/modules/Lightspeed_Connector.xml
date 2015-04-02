@@ -1,0 +1,11 @@
+<config>
+	<modules>
+		<Lightspeed_Connector>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Api />
+			</depends>
+		</Lightspeed_Connector>
+	</modules>
+</config>

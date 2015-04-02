@@ -1,0 +1,108 @@
+<config>
+	<api>
+		<resources>
+			<lightspeed_connector translate="title" module="connector">
+				<title>lightspeed connector Core API calls</title>
+				<model>connector/core_api</model>
+				<acl>lightspeed/connector</acl>
+				<methods>
+					<createConfigAttribute translate="title" module="connector">
+						<title>Create a configurable attribute for configurable product</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</createConfigAttribute>
+					<assignProductsToConfigurable translate="title" module="connector">
+						<title>Assign a simple product to configurable product</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</assignProductsToConfigurable>
+					<createAttributeOption translate="title" module="connector">
+						<title>Create an option for an existing product attribute</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</createAttributeOption>
+					<createLightSpeedAttributeSet translate="title" module="connector">
+						<title>Create a attribute set.</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</createLightSpeedAttributeSet>
+					<deleteAttributeOption translate="title" module="connector">
+						<title>Delete an option for a attribute.</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</deleteAttributeOption>
+                    <listProductTaxClasses translate="title" module="connector">
+                        <title>List all product tax classes</title>
+                        <acl>lightspeed/connector/allaccess</acl>
+                    </listProductTaxClasses>            
+					<listTaxesForOrder translate="title" module="connector">
+						<title>List all taxes applied to an order.</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</listTaxesForOrder>
+					<listPaymentMethods translate="title" module="connector">
+						<title>List all payment methods</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</listPaymentMethods>
+					<assignProductToCategory translate="title" module="connector">
+						<title>Magento version 1.5, this is broken.</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</assignProductToCategory>
+					<listOrders  translate="title" module="connector">
+						<title>List Orders with limit and offset</title>
+						<acl>lightspeed/connector/allaccess</acl>
+					</listOrders>
+					
+					
+				</methods>
+                <faults module="core">
+                    <configurable_product_does_not_exist>
+                        <code>100</code>
+                        <message>Configurable product does not exist.</message>
+                    </configurable_product_does_not_exist>
+                    <attribute_does_not_exist>
+                        <code>101</code>
+                        <message>Configurable attribute does not exist.</message>
+                    </attribute_does_not_exist>
+                    <configurable_attribute_already_exists>
+                        <code>102</code>
+                        <message>Configurable attribute already exists for configurable product.</message>
+                    </configurable_attribute_already_exists>
+                    <attribute_create_error>
+                    	<code>103</code>
+                    	<message>Couldn't create the a attribute.</message>
+                    </attribute_create_error>
+                    <option_does_not_exist>
+                    	<code>104</code>
+                    	<message>Option does not exist.</message>
+                    </option_does_not_exist>
+                    <attribute_option_already_exists>
+                    	<code>105</code>
+                    	<message>Option already exists for attribute.</message>
+                    </attribute_option_already_exists>
+                    <category_does_not_exist>
+                    	<code>106</code>
+                    	<message>Category does not exist.</message>
+                    </category_does_not_exist>
+                    <product_does_not_exist>
+                    	<code>107</code>
+                    	<message>Product does not exist</message>
+                    </product_does_not_exist>
+				</faults>
+			</lightspeed_connector>
+		</resources>
+		<resources_alias>
+			<core>lightspeed_connector</core>
+		</resources_alias>
+		<acl>
+			<resources>
+				<lightspeed translate="title" module="connector">
+					<title>Lightspeed</title>
+					<sort_order>100</sort_order>
+					<connector translate="title" module="connector">
+						<title>connector</title>
+						<sort_order>100</sort_order>
+						<allaccess translate="title" module="connector">
+							<title>Core functionality required by all users.</title>
+							<sort_order>10</sort_order>
+						</allaccess>
+					</connector>
+				</lightspeed>
+			</resources>
+		</acl>
+	</api>
+</config>

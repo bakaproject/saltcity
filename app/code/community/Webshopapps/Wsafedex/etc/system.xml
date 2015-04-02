@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    Mage
+ * @package     Mage_Usa
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+/*
+ * @category   Webshopapps
+ * @package    Webshopapps_UsaShipping
+ * @copyright  Copyright (c) 2011 WebshopApps (http://www.webshopapps.com)
+ * @license    http://www.webshopapps.com/license/license.txt
+ * @author     Karen Baker <sales@webshopapps.com>
+*/
+-->
+<config>
+  <sections>
+     <carriers translate="label" module="shipping">
+       <groups>
+        <fedexsoap translate="label">
+          <label>Webshopapps Fedex</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>2</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+		  <comment>
+		  	<![CDATA[
+				<div style="padding:10px;background-color:#fff;border:1px solid #ddd;margin-bottom:7px;">
+				This module was developed by <a href="http://www.webshopapps.com" target="_blank">www.WebShopApps.com</a> - <b>Magento Shipping Extension Specialists</b>.
+				<br/>We offer <a href="http://www.webshopapps.com/dimensional-shipping.html"  target="_blank">Dimensional Shipping</a> which allows you to get more accurate live shipping rates from Fedex, UPS, USPS. 
+				<br/>We have the largest selections of  <a href="http://www.webshopapps.com" target="_blank">shipping extensions</a> on Magento.</a>
+				</div>
+			  ]]>
+		  </comment>
+          <fields>
+              <active translate="label">
+                  <label>Enabled</label>
+                  <frontend_type>select</frontend_type>
+                  <source_model>adminhtml/system_config_source_yesno</source_model>
+                  <sort_order>10</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </active>
+              <title translate="label">
+                  <label>Title</label>
+                  <frontend_type>text</frontend_type>
+                  <sort_order>15</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>1</show_in_store>
+              </title>
+              <account translate="label comment">
+        		  <label>Account Number</label>
+                  <frontend_type>obscure</frontend_type>
+                  <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                  <sort_order>20</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+                  <comment>Please make sure to use only digits here. No dashes are allowed.</comment>
+              </account>
+              	<request_type translate="label">
+	                    <label>Rate Request Type</label>
+	                    <frontend_type>select</frontend_type>
+	                    <source_model>wsafedex/shipping_carrier_fedex_source_requesttype</source_model>              
+	                    <sort_order>65</sort_order>
+	                    <show_in_default>1</show_in_default>
+	                    <show_in_website>1</show_in_website>
+	                    <show_in_store>1</show_in_store>
+            </request_type>
+      		  <key translate="label">
+              	<label>Key</label>
+                  <frontend_type>obscure</frontend_type>
+                  <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                  <sort_order>30</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </key>
+         	  <fedex_password translate="label">
+              	  <label>Password</label>
+                  <frontend_type>obscure</frontend_type>
+                  <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                  <sort_order>40</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </fedex_password>
+         	  <meter_no translate="label">
+              	  <label>Meter Number</label>
+                  <frontend_type>obscure</frontend_type>
+                  <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                  <sort_order>50</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </meter_no>
+              <allowed_methods translate="label">
+                  <label>Allowed methods</label>
+                  <frontend_type>multiselect</frontend_type>
+                  <source_model>wsafedex/shipping_carrier_fedex_source_method</source_model>
+                  <sort_order>60</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+                  <can_be_empty>1</can_be_empty>
+              </allowed_methods>
+              <free_shipping_enable translate="label">
+                  <label>Free shipping with minimum order amount</label>
+                  <frontend_type>select</frontend_type>
+                  <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                  <sort_order>70</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </free_shipping_enable>
+              <free_shipping_subtotal translate="label">
+                  <label>Minimum order amount for free shipping</label>
+                  <frontend_type>text</frontend_type>
+                  <sort_order>80</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </free_shipping_subtotal>
+              <dropoff translate="label">
+                  <label>Dropoff</label>
+                  <frontend_type>select</frontend_type>
+                  <source_model>wsafedex/shipping_carrier_fedex_source_dropoff</source_model>
+                  <sort_order>90</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </dropoff>
+              <free_method translate="label">
+                  <label>Free method</label>
+                  <frontend_type>select</frontend_type>
+                  <frontend_class>free-method</frontend_class>
+                  <source_model>wsafedex/shipping_carrier_fedex_source_freemethod</source_model>
+                  <sort_order>100</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </free_method>
+              <monetary_value translate="label">
+                    <label>Add Declared Value</label>
+                    <frontend_type>select</frontend_type>
+                    <source_model>adminhtml/system_config_source_yesno</source_model>
+                    <sort_order>105</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+              </monetary_value>
+              <gateway_url translate="label">
+                  <label>Gateway URL</label>
+                  <frontend_type>select</frontend_type>
+                  <source_model>wsafedex/shipping_carrier_fedex_source_gatewayurl</source_model>
+                  <sort_order>55</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </gateway_url>
+              <residence_delivery translate="label">
+                  <label>Residential Delivery</label>
+                  <frontend_type>select</frontend_type>
+                  <sort_order>120</sort_order>
+                  <source_model>adminhtml/system_config_source_yesno</source_model>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </residence_delivery>
+              <home_ground translate="label">
+                  <label>Show Home Delivery as Ground</label>
+                  <frontend_type>select</frontend_type>
+                  <sort_order>125</sort_order>
+                  <source_model>adminhtml/system_config_source_yesno</source_model>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </home_ground>
+             <saturday_pickup translate="label">
+	              <label>Allow Saturday Pickups</label>
+	              <source_model>adminhtml/system_config_source_yesno</source_model>
+	              <frontend_type>select</frontend_type>
+	              <sort_order>130</sort_order>
+	              <show_in_default>1</show_in_default>
+	              <show_in_website>1</show_in_website>
+	              <show_in_store>1</show_in_store>
+	              <comment>Saturday pickups incur a surcharge for air methods</comment>
+            </saturday_pickup>
+              <handling_type translate="label">
+                  <label>Calculate Handling Fee</label>
+                  <frontend_type>select</frontend_type>
+                  <source_model>shipping/source_handlingType</source_model>
+                  <sort_order>140</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </handling_type>
+              <handling_action translate="label">
+                  <label>Handling Applied</label>
+                  <frontend_type>select</frontend_type>
+                  <source_model>shipping/source_handlingAction</source_model>
+                  <sort_order>150</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </handling_action>
+              <handling_fee translate="label">
+                  <label>Handling fee</label>
+                  <frontend_type>text</frontend_type>
+                  <sort_order>160</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </handling_fee>
+              <max_package_weight translate="label">
+                  <label>Maximum Package Weight (Please consult your shipping carrier for maximum supported shipping weight)</label>
+                  <frontend_type>text</frontend_type>
+                  <sort_order>170</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </max_package_weight>
+              <packaging translate="label">
+                  <label>Packaging</label>
+                  <frontend_type>select</frontend_type>
+                  <source_model>wsafedex/shipping_carrier_fedex_source_packaging</source_model>
+                  <sort_order>180</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </packaging>
+              <sort_order translate="label">
+                  <label>Sort order</label>
+                  <frontend_type>text</frontend_type>
+                  <sort_order>500</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </sort_order>
+              <sallowspecific translate="label">
+                  <label>Ship to applicable countries</label>
+                  <frontend_type>select</frontend_type>
+                  <sort_order>300</sort_order>
+                  <frontend_class>shipping-applicable-country</frontend_class>
+                  <source_model>adminhtml/system_config_source_shipping_allspecificcountries</source_model>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </sallowspecific>
+              <specificcountry translate="label">
+                  <label>Ship to Specific countries</label>
+                  <frontend_type>multiselect</frontend_type>
+                  <sort_order>310</sort_order>
+                  <source_model>adminhtml/system_config_source_country</source_model>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+                  <can_be_empty>1</can_be_empty>
+              </specificcountry>
+              <showmethod translate="label">
+                  <label>Show method if not applicable</label>
+                  <frontend_type>select</frontend_type>
+                  <sort_order>320</sort_order>
+                  <frontend_class>shipping-skip-hide</frontend_class>
+                  <source_model>adminhtml/system_config_source_yesno</source_model>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+              </showmethod>
+              <specificerrmsg translate="label">
+                  <label>Displayed Error Message</label>
+                  <frontend_type>textarea</frontend_type>
+                  <sort_order>330</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>1</show_in_store>
+              </specificerrmsg>
+               <debug translate="label">
+                   <label>Debug</label>
+                   <frontend_type>select</frontend_type>
+                   <source_model>adminhtml/system_config_source_yesno</source_model>
+                   <sort_order>400</sort_order>
+                   <show_in_default>1</show_in_default>
+                   <show_in_website>1</show_in_website>
+                   <show_in_store>0</show_in_store>
+               </debug>
+          </fields>
+        </fedexsoap>
+      </groups>
+    </carriers>
+  </sections>
+</config>

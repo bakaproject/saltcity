@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2010-2012 Amasty (http://www.amasty.com)
+* @package Amasty_Easyblocks
+*/
+-->
+<layout version="1.0.0">
+    <ameasyblocks_adminhtml_placeholder_new>
+        <reference name="head">
+            <action method="addItem"><type>js</type><name>lib/flex.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>lib/FABridge.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/flexuploader.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/browser.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree-checkbox.js</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/magento.css</name><params/></action>
+        </reference>
+    </ameasyblocks_adminhtml_placeholder_new>
+    
+    <ameasyblocks_adminhtml_placeholder_edit>
+        <reference name="head">
+            <action method="addItem"><type>js</type><name>lib/flex.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>lib/FABridge.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/flexuploader.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/browser.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree-checkbox.js</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/magento.css</name><params/></action>
+        </reference>
+    </ameasyblocks_adminhtml_placeholder_edit>
+    
+    <ameasyblocks_adminhtml_block_new>
+        <reference name="head">
+            <action method="addItem"><type>js</type><name>lib/flex.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>lib/FABridge.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/flexuploader.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/browser.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree-checkbox.js</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/magento.css</name><params/></action>
+        </reference>
+    </ameasyblocks_adminhtml_block_new>
+    
+    <ameasyblocks_adminhtml_block_edit>
+        <reference name="head">
+            <action method="addItem"><type>js</type><name>lib/flex.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>lib/FABridge.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/flexuploader.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>mage/adminhtml/browser.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree.js</name><params/></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree-checkbox.js</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ext-all.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>extjs/resources/css/ytheme-magento.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name><params/></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/magento.css</name><params/></action>
+        </reference>
+    </ameasyblocks_adminhtml_block_edit>
+</layout>

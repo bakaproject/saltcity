@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2010-2012 Amasty (http://www.amasty.com)
+* @package Amasty_Easyblocks
+*/
+-->
+<layout version="1.0.0">
+    <default>
+    
+        <reference name="content">
+            <block type="ameasyblocks/block" name="ameasyblocks.block-fullscreen">
+                <action method="setPlace"><place>fullscreen</place></action>
+            </block>
+        </reference>
+        
+        <reference name="content">
+            <block type="ameasyblocks/block" name="ameasyblocks.block-content">
+                <action method="setPlace"><place>content</place></action>
+            </block>
+        </reference>
+        
+        <reference name="left">
+            <block type="ameasyblocks/block" before="-" name="ameasyblocks.block-left-top">
+                <action method="setPlace"><place>left-top</place></action>
+            </block>
+        </reference>
+        
+        <reference name="left">
+            <block type="ameasyblocks/block" after="-" name="ameasyblocks.block-left-bottom">
+                <action method="setPlace"><place>left-bottom</place></action>
+            </block>
+        </reference>
+        
+        <reference name="right">
+            <block type="ameasyblocks/block" before="-" name="ameasyblocks.block-right-top">
+                <action method="setPlace"><place>right-top</place></action>
+            </block>
+        </reference>
+        
+        <reference name="right">
+            <block type="ameasyblocks/block" after="-" name="ameasyblocks.block-right-bottom">
+                <action method="setPlace"><place>right-bottom</place></action>
+            </block>
+        </reference>
+        
+        <reference name="top.menu">
+            <block type="ameasyblocks/block" after="-" name="ameasyblocks.block-menu-bottom">
+                <action method="setPlace"><place>menu-bottom</place></action>
+            </block>
+        </reference>
+        
+        <reference name="top.menu">
+            <block type="ameasyblocks/block" before="-" name="ameasyblocks.block-menu-top">
+                <action method="setPlace"><place>menu-top</place></action>
+            </block>
+        </reference>
+        
+        <reference name="footer">
+            <block type="ameasyblocks/block" before="-" name="ameasyblocks.block-footer-top">
+                <action method="setPlace"><place>footer-top</place></action>
+            </block>
+        </reference>
+        
+        <reference name="footer">
+            <block type="ameasyblocks/block" after="-" name="ameasyblocks.block-footer-bottom">
+                <action method="setPlace"><place>footer-bottom</place></action>
+            </block>
+        </reference>
+    </default>
+    
+    <catalog_category_default>
+        <reference name="content">
+            <block type="ameasyblocks/block" before="product_list" name="ameasyblocks.block-above-list-category">
+                <action method="setPlace"><place>above-list-category</place></action>
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="ameasyblocks/block" after="product_list" name="ameasyblocks.block-under-list-category">
+                <action method="setPlace"><place>under-list-category</place></action>
+            </block>
+        </reference>
+    </catalog_category_default>
+    
+    <catalog_category_layered>
+        <reference name="content">
+            <block type="ameasyblocks/block" before="product_list" name="ameasyblocks.block-above-list-category">
+                <action method="setPlace"><place>above-list-category</place></action>
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="ameasyblocks/block" after="product_list" name="ameasyblocks.block-under-list-category">
+                <action method="setPlace"><place>under-list-category</place></action>
+            </block>
+        </reference>
+    </catalog_category_layered>
+    
+</layout>

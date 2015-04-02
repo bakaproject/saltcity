@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    Mage
+ * @package     Mage_Usa
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+/*
+ * @category   Webshopapps
+ * @package    Webshopapps_UsaShipping
+ * @copyright  Copyright (c) 2011 WebshopApps (http://www.webshopapps.com)
+ * @license    http://www.webshopapps.com/license/license.txt
+ * @author     Karen Baker <sales@webshopapps.com>
+*/
+-->
+<config>
+   <modules>
+        <Webshopapps_Wsafedex>
+          <version>0.0.1</version>
+    	</Webshopapps_Wsafedex>
+    </modules>
+ <global>
+ 	<blocks>
+ 		<wsafedex>
+         <class>Webshopapps_Wsafedex_Block</class>
+ 		</wsafedex>
+ 	</blocks>
+    <models>
+      <wsafedex>
+        <class>Webshopapps_Wsafedex_Model</class>
+      </wsafedex>
+      <usa>
+ 		<rewrite>
+ 			<shipping_carrier_fedex>Webshopapps_Wsafedex_Model_Shipping_Carrier_Fedex</shipping_carrier_fedex>  
+ 		</rewrite>
+ 	  </usa> 
+    </models>
+    <resources>
+      <wsafedex_setup>
+        <setup>
+          <module>Webshopapps_Wsafedex</module>
+        </setup>
+        <connection>
+          <use>core_setup</use>
+        </connection>
+      </wsafedex_setup>
+      <wsafedex_write>
+      	<connection>
+        	<use>core_write</use>
+        </connection>
+   	  </wsafedex_write>
+    </resources>
+    <helpers>
+      <wsafedex>
+          <class>Webshopapps_Wsafedex_Helper</class>
+      </wsafedex>
+  	</helpers>  	
+  	<sales>
+		<shipping>
+		    <carriers>
+				<fedexsoap>
+					<class>Webshopapps_Wsafedex_Model_Shipping_Carrier_Fedexsoap</class>
+				</fedexsoap>
+		    </carriers>
+		</shipping>
+    </sales>
+  </global>
+  
+  <default>
+ 	<carriers>
+            <fedexsoap>
+                <account backend_model="adminhtml/system_config_backend_encrypted"/>
+                <key backend_model="adminhtml/system_config_backend_encrypted"/>
+                <fedex_password backend_model="adminhtml/system_config_backend_encrypted"/>
+                <meter_no backend_model="adminhtml/system_config_backend_encrypted"/>
+                <active>0</active>
+                <sallowspecific>0</sallowspecific>
+                <allowed_methods>EUROPE_FIRST_INTERNATIONAL_PRIORITY,FEDEX_1_DAY_FREIGHT,FEDEX_2_DAY_FREIGHT,FEDEX_2_DAY,FEDEX_3_DAY_FREIGHT,FEDEX_EXPRESS_SAVER,FEDEX_GROUND,FIRST_OVERNIGHT,GROUND_HOME_DELIVERY,INTERNATIONAL_ECONOMY,INTERNATIONAL_ECONOMY_FREIGHT,INTERNATIONAL_FIRST,INTERNATIONAL_GROUNDINTERNATIONAL_PRIORITY,INTERNATIONAL_PRIORITY_FREIGHT,PRIORITY_OVERNIGHT,SMART_POSTSTANDARD_OVERNIGHT</allowed_methods>
+                <cutoff_cost></cutoff_cost>
+                <dropoff>REGULAR_PICKUP</dropoff>
+                <free_method>FEDEX_GROUND</free_method>
+                <gateway_url>https://gateway.fedex.com/GatewayDC</gateway_url>
+                <handling>0</handling>
+                <model>wsafedex/shipping_carrier_fedexsoap</model>
+                <packaging>YOUR_PACKAGING</packaging>
+                <title>Federal Express</title>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <max_package_weight>150</max_package_weight>
+                <saturday_pickup>0</saturday_pickup>
+                <home_ground>0</home_ground>
+                <handling_type>F</handling_type>
+                <handling_action>O</handling_action>
+                <request_type>LIST</request_type>
+            </fedexsoap>
+        </carriers>
+    </default>
+</config>

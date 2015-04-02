@@ -1,0 +1,19 @@
+<config>
+	<modules>
+		<Lightspeed_Connector>
+			<version>0.0.0.1</version>
+		</Lightspeed_Connector>
+	</modules>
+	<global>
+		<models>
+			<connector>
+				<class>Lightspeed_Connector_Model</class>
+			</connector>
+		</models>
+		<helpers>
+			<connector>
+				<class>Lightspeed_Connector_Helper</class>
+			</connector>
+		</helpers>
+	</global>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2010-2012 Amasty (http://www.amasty.com)
+* @package Amasty_Easyblocks
+*/
+-->
+<config>
+    <modules>
+        <Amasty_Easyblocks>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Amasty_Easyblocks>
+    </modules>
+</config>

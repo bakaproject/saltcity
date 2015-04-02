@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mage_Usaepay</name>
+    <version>1.1.0</version>
+    <stability>stable</stability>
+    <license>BSD License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Payment gateway module for USAePay.  </summary>
+    <description>Provides native support for the USAePay gateway.   To use module you must first generate a source key and pin within the USAePay console.</description>
+    <notes>- adds support for extended fraud protection using ThreatMetrix&#xD;
+- fixes bug with billing address information pulling incorrectly from the shipping address</notes>
+    <authors><author><name>Tim McEwen</name><user>tmcewen</user><email>tim@usaepay.com</email></author></authors>
+    <date>2012-03-19</date>
+    <time>21:53:49</time>
+    <contents><target name="magecommunity"><dir name="Mage"><dir name="Usaepay"><dir name="Model"><file name="CCPaymentAction.php" hash="25c0deaffbc294ff5c375db970227ce4"/><file name="SuspectedFraudConfigOptions.php" hash="86d0d52c45f33bdc3d9d8b373d5bd074"/><file name="TranApi.php" hash="674a7e1a0d9e4ebac6413c358ac9fce3"/></dir><dir name="Helper"><file name="Data.php" hash="b97c73bf3d44c55716983eb8668ff0f5"/></dir><dir name="Block"><file name="Form.php" hash="bcc77121a4d802b6c23fcc59e41dcf7a"/></dir><dir name="etc"><file name="config.xml" hash="3d04924f05fd37d38ce377a4b9dad7b1"/><file name="system.xml" hash="3225cd4696f249f84e719d41b7b92a83"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="base"><dir name="default"><dir name="template"><dir name="usaepay"><file name="form.phtml" hash="e2b0a6f62d87e585ef8f976748444e9a"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="usaepay"><file name="form.phtml" hash="ab55c4c0d0980f8dd0f4750bb825f06d"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mage_Usaepay.xml" hash="9e0577b98f08666323e60431010905fb"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.4.0</max></php></required></dependencies>
+</package>

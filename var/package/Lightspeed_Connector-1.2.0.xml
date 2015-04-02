@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Lightspeed_Connector</name>
+    <version>1.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/OSL-3.0">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>LightSpeed Connector allows the LightSpeed eCommerce module to connect and exchange data with LightSpeed Server.</summary>
+    <description>LightSpeed Connector allows the LightSpeed eCommerce module to connect and exchange data with LightSpeed Server.
+
+Requires a licensed LightSpeed installation for use.</description>
+    <notes>Updated to support recent version of Magento</notes>
+    <authors><author><name>LightSpeed</name><user>auto-converted</user><email>info@sales.com</email></author></authors>
+    <date>2012-10-01</date>
+    <time>14:12:22</time>
+    <contents><target name="magecommunity"><dir name="Lightspeed"><dir name="Connector"><dir name="etc"><file name="api.xml" hash="ee6b2f48903011c0b7ce3f64a73fd7b3"/><file name="config.xml" hash="d9ce1f13fa1692066a44feefc8db0244"/></dir><dir name="Helper"><file name="Data.php" hash="08fd77f4f07efd074ffdee5e64bb0d07"/></dir><dir name="Model"><dir name="Core"><file name="Api.php" hash="3dae4116732c7efb39b50d8539b50ae8"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Lightspeed_Connector.xml" hash="8219f524baf67ebe0a1bac47046f087f"/></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>
