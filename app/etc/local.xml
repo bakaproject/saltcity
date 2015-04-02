@@ -43,7 +43,7 @@
                     <host><![CDATA[localhost]]></host>
                     <username><![CDATA[store20]]></username>
                     <password><![CDATA[ZoImosK2UF14TI7n]]></password>
-                    <dbname><![CDATA[scbs_store]]></dbname>
+                    <dbname><![CDATA[store20]]></dbname>
                     <active>1</active>
                 </connection>
             </default_setup>
