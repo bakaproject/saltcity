@@ -91,7 +91,7 @@ body {
   left: 50%;
   top: 35px;
   margin-left: -320px;
-  background: rgba(255,255,255,0.8) !important;
+  background: rgba(255,255,255,0.9) !important;
   border: 1px solid #000;
   border-top: 4px solid #bbb; 
   box-sizing: border-box;
@@ -229,7 +229,7 @@ body {
 .main_slider {
   margin: 20px auto 0;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   width: 848px;
   height: 435px;
   overflow: auto;
