@@ -41,9 +41,9 @@
             <default_setup>
                 <connection>
                     <host><![CDATA[localhost]]></host>
-                    <username><![CDATA[store20]]></username>
-                    <password><![CDATA[ZoImosK2UF14TI7n]]></password>
-                    <dbname><![CDATA[store20]]></dbname>
+                    <username><![CDATA[root]]></username>
+                    <password><![CDATA[root]]></password>
+                    <dbname><![CDATA[saltcity]]></dbname>
                     <active>1</active>
                 </connection>
             </default_setup>

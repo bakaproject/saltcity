@@ -45,6 +45,17 @@
             </block>
                 <block type="page/switch" name="store_switcher_header" as="store_switcher_header" template="page/switch/stores.phtml"/>
         </reference>
+        <reference name="top.links">
+            <action method="removeLinkBlock"><blockName>wishlist_link</blockName></action>
+            <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
+            <remove name="checkout_cart_link"/>
+             <!-- To re-add 'My Cart' or 'Checkout' after removing both -->
+            <block type="checkout/links" name="checkout_cart_link_custom">
+                <action method="addCartLink"></action>
+            </block>
+        </reference> 
+
+
         <reference name="footer">
         	<remove name="store_switcher" />
         </reference>
@@ -60,4 +71,22 @@
             <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
         </reference>
 	</review_product_list>
+    <customer_logged_out>
+        <reference name="top.links">
+          <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
+        </reference>    
+    </customer_logged_out>
+
+    <reference name="header">
+        <block type="cms/block" name="home_page_header_block">
+            <action method="setBlockId"><block_id>home_page_header_block</block_id></action>
+        </block>
+    </reference>
+    <reference name="head">
+        <action method="addItem"><type>skin_css</type><name>css/slider.css</name><params/></action>
+        <action method="addItem"><type>skin_js</type><name>js/jquery-1.3.2.min.js</name></action>
+        <action method="addItem"><type>skin_js</type><name>js/cycle-fade-effect.js</name></action>
+        <action method="addItem"><type>skin_js</type><name>js/slider.js</name></action>
+    </reference>
+
 </layout>

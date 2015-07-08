@@ -1,0 +1,9 @@
+a:5:{i:0;s:25:"Unsupported image format.";i:1;s:1081:"#0 /Users/ryanharmon/Sites/saltcity/lib/Varien/Image/Adapter/Gd2.php(51): Varien_Image_Adapter_Gd2->_getCallback('create')
+#1 /Users/ryanharmon/Sites/saltcity/app/code/core/Mage/Adminhtml/controllers/Cms/WysiwygController.php(52): Varien_Image_Adapter_Gd2->open('https://saltcit...')
+#2 /Users/ryanharmon/Sites/saltcity/app/code/core/Mage/Core/Controller/Varien/Action.php(419): Mage_Adminhtml_Cms_WysiwygController->directiveAction()
+#3 /Users/ryanharmon/Sites/saltcity/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(250): Mage_Core_Controller_Varien_Action->dispatch('directive')
+#4 /Users/ryanharmon/Sites/saltcity/app/code/core/Mage/Core/Controller/Varien/Front.php(176): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#5 /Users/ryanharmon/Sites/saltcity/app/code/core/Mage/Core/Model/App.php(354): Mage_Core_Controller_Varien_Front->dispatch()
+#6 /Users/ryanharmon/Sites/saltcity/app/Mage.php(683): Mage_Core_Model_App->run(Array)
+#7 /Users/ryanharmon/Sites/saltcity/index.php(87): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:136:"/index.php/backend/cms_wysiwyg/directive/___directive/e3ttZWRpYSB1cmw9ImhvbWVfYmFubmVyLmpwZyJ9fQ,,/key/7a56e62d6328131fc324ba5520bca044/";s:11:"script_name";s:10:"/index.php";s:4:"skin";s:5:"admin";}
