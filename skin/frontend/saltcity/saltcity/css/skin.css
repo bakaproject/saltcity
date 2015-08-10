@@ -418,8 +418,8 @@ div.top_static a:hover {
 /*breadvrumbs*/
 .breadcrumbs {
 	clear: both;
-	margin-bottom: 3px;
-	padding: 5px 0 5px 0;
+/*	margin-bottom: 3px;
+	padding: 5px 0 5px 0;*/
 }
 .breadcrumbs li {
 	margin-right: 5px;
