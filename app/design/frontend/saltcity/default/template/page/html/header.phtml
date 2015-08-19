@@ -19,31 +19,29 @@
  * needs please refer to http://www.magentocommerce.com for more information.
  *
  * @category    design
- * @package     base_default
- * @copyright   Copyright (c) 2009 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @package     default_modern
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
  */
 ?>
 <div class="header-container">
     <div class="header">
         <?php if ($this->getIsHomePage()):?>
-        <h2 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h2>
+        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
         <?php else:?>
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
-        <div class="quick-access">
-            <?php echo $this->getChildHtml('topSearch') ?>
-            <p class="welcome-msg"><?php echo $this->getWelcome()?></p>
-            <?php echo $this->getChildHtml('topLinks') ?>
-            <div class="switchers">
-    	        <?php echo $this->getChildHtml('store_switcher') ?>
-	            <?php echo $this->getChildHtml('store_language') ?>
-            </div>
-        </div>
-        <?php echo $this->getChildHtml('topContainer'); ?>
+        <p class="top-promo" title="<?php echo $this->__('Free Shipping on orders over 50$'); ?>"><?php echo $this->__('Free Shipping on orders over 50$'); ?></p>
+        <?php echo $this->getChildHtml('topMenu') ?>
     </div>
-</div>
-<?php echo $this->getChildHtml('topMenu') ?>
-<div class="home_page_header_block">
-<?php echo $this->getChildHtml('home_page_header_block'); ?>
+    <div class="quick-access">
+        <?php echo $this->getChildHtml('store_language') ?>
+        <p class="welcome-msg"><?php echo $this->getWelcome()?></p>
+        <?php echo $this->getChildHtml('topLinks') ?>
+    </div>
+    <?php echo $this->getChildHtml('topBar') ?>
+    <?php echo $this->getChildHtml('topContainer'); ?>
 </div>

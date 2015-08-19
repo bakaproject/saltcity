@@ -45,19 +45,78 @@
             </block>
                 <block type="page/switch" name="store_switcher_header" as="store_switcher_header" template="page/switch/stores.phtml"/>
         </reference>
+        <reference name="top.links">
+            <action method="removeLinkBlock"><blockName>wishlist_link</blockName></action>
+            <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
+            <remove name="checkout_cart_link"/>
+             <!-- To re-add 'My Cart' or 'Checkout' after removing both -->
+            <block type="checkout/links" name="checkout_cart_link_custom">
+                <action method="addCartLink"></action>
+            </block>
+        </reference> 
+
+
         <reference name="footer">
         	<remove name="store_switcher" />
         </reference>
 
 	</default>
+    <!--Category View-->
+    <catalog_category_view>
+        <!--Set Page Template-->
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+            </action>
+        </reference>
+    </catalog_category_view>
+
+    <!--Product View-->
+    <catalog_product_view>
+        <!--Product Information Block-->
+        <reference name="product.info">
+            <!--Recently Viewed Products-->
+            <block type="reports/product_viewed" name="product.viewed" template="reports/recently-viewed.phtml" />
+        </reference>
+    </catalog_product_view>
+
     <catalog_product_view translate="label">
+        <label>Catalog Product View (Any)</label>
+        <!-- Mage_Catalog -->
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="catalog/product_view" name="product.info" template="catalog/product/view.phtml">
+                <!-- <action method="unsetChild"><child>product_options_wrapper</child></action> -->
+                <remove name="product.info.options.wrapper"/>
+<!--                 <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs" template="catalog/product/view/tabs.phtml" >
+                    <action method="addTab" translate="title" module="catalog"><alias>description</alias><title>Product Description</title><block>catalog/product_view_description</block><template>catalog/product/view/description.phtml</template></action>
+                    <action method="addTab" translate="title" module="catalog"><alias>upsell_products</alias><title>We Also Recommend</title><block>catalog/product_list_upsell</block><template>catalog/product/list/upsell.phtml</template></action>
+                    <action method="addTab" translate="title" module="catalog"><alias>additional</alias><title>Additional Information</title><block>catalog/product_view_attributes</block><template>catalog/product/view/attributes.phtml</template></action>
+                </block>
+ -->
+<!--                 <block type="catalog/product_view_additional" name="product.info.additional" as="product_additional_data" />
+                <block type="catalog/product_view" name="product.info.addto" as="addto" template="catalog/product/view/addto.phtml"/>
+                <block type="catalog/product_view" name="product.info.addtocart" as="addtocart" template="catalog/product/view/addtocart.phtml"/>
+ -->
+<!--                 <block type="core/text_list" name="product.info.extrahint" as="extrahint" translate="label">
+                    <label>Product View Extra Hint</label>
+                </block>
+
+                <block type="catalog/product_view" name="product.info.options.wrapper" as="product_options_wrapper" template="catalog/product/view/options/wrapper.phtml" translate="label"> -->
+            </block>
+        </reference>
+    </catalog_product_view>
+<!--     <review_product_list translate="label">
         <reference name="root">
             <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
         </reference>
-	</catalog_product_view>
-    <review_product_list translate="label">
-        <reference name="root">
-            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
-        </reference>
-	</review_product_list>
+	</review_product_list> -->
+    <customer_logged_out>
+        <reference name="top.links">
+          <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
+        </reference>    
+    </customer_logged_out>
 </layout>

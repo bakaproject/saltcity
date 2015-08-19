@@ -34,6 +34,10 @@ Whoops, it looks like you have an invalid PHP version.</h3></div><p>Magento supp
     exit;
 }
 
+if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
+    Mage::setIsDeveloperMode(true);
+}
+
 /**
  * Error reporting
  */

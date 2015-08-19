@@ -19,14 +19,24 @@
  * needs please refer to http://www.magentocommerce.com for more information.
  *
  * @category    design
- * @package     base_default
- * @copyright   Copyright (c) 2009 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @package     default_modern
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
 <div class="footer-container">
     <div class="footer">
-        <?php echo $this->getChildHtml() ?>
-        <address><?php echo $this->getCopyright() ?></address>
+        <?php echo $this->getChildHtml('bottomContainer') ?>
+        <div class="f-right">
+            <img src="<?php echo $this->getSkinUrl('images/media/footer_callout.png');?>" class="footer-callout" alt="" />
+            <?php echo $this->getChildHtml('store_switcher') ?>
+        </div>
+        <div class="f-left">
+            <?php echo $this->getChildHtml('cms_footer_links') ?>
+            <?php echo $this->getChildHtml('footer_links') ?>
+            <?php echo $this->getChildHtml('newsletter') ?>
+            <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
+            <address><?php echo $this->getCopyright() ?></address>
+        </div>
     </div>
 </div>
