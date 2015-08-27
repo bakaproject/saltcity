@@ -751,3 +751,17 @@ body {
 .mini-products-grid td.empty {}
 .mini-products-grid td.last { padding-right:0; }
 .mini-products-grid .ratings .rating-box { float:none; display:block; margin:0 0 3px; }
+
+
+
+
+
+.cms-page-view {
+
+}
+
+.cms-page-view .main-container, .cms-index-noroute .main-container {
+  position: relative;
+  z-index: 10;
+}
+
