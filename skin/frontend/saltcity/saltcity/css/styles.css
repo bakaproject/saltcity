@@ -41,10 +41,13 @@ body {
 
 .nav-container #nav {
   width: 951px;
-  margin: 0 0 0 400px;
+  margin: 0;
   padding: 0;
   list-style: none;
   border: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
 }
 
 #nav ul {
@@ -94,7 +97,7 @@ body {
   position: absolute;
   left: 50%;
   top: 35px;
-  margin-left: -320px;
+  margin-left: -485px;
   background: rgba(255,255,255,0.9) !important;
   border: 1px solid #000;
   border-top: 4px solid #bbb;
@@ -363,20 +366,23 @@ body {
 
 .footer-container ul {
   list-style: none;
-  width: 20% !important;
+  width: auto;
   float: left;
-  margin: 0;
+  margin: 0 0 0 38px;
   padding: 0;
   text-align: left;
   color: #999;
   box-sizing: border-box;
-  padding-left: 60px;
+  /*padding-left: 45px;*/
   display: block;
-  width: auto;
 }
 
 .footer-container ul#products {
-  padding-left: 31px;
+  /*padding-left: 31px;*/
+}
+
+.footer-container ul#connected {
+  width: 150px;
 }
 
 .footer-container ul.links {
@@ -410,6 +416,46 @@ body {
   width: 100%;
   clear: both;
   text-indent: -999999px;
+}
+
+.footer-container .fb i {
+  display: inline-block;
+  float: right;
+  width: 21px;
+  height: 21px;
+  background: url(/media/social-icons.jpg) no-repeat 0 0;
+}
+
+.footer-container .tw i {
+  display: inline-block;
+  float: right;
+  width: 21px;
+  height: 21px;
+  background: url(/media/social-icons.jpg) no-repeat 0 -26px;
+}
+
+.footer-container .yt i {
+  display: inline-block;
+  float: right;
+  width: 21px;
+  height: 21px;
+  background: url(/media/social-icons.jpg) no-repeat 0 -52px;
+}
+
+.footer-container .gp i {
+  display: inline-block;
+  float: right;
+  width: 21px;
+  height: 21px;
+  background: url(/media/social-icons.jpg) no-repeat 0 -78px;
+}
+
+.footer-container .pt i {
+  display: inline-block;
+  float: right;
+  width: 21px;
+  height: 21px;
+  background: url(/media/social-icons.jpg) no-repeat 0 -104px;
 }
 
 .footer-container .form-subscribe {
