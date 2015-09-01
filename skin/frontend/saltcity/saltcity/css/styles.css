@@ -91,7 +91,8 @@ body {
 }
 
 #nav .level-top:hover > ul.level0 {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 858px;
   /*height: 450px;*/
   position: absolute;
@@ -117,14 +118,14 @@ body {
 }
 
 #nav li.level1 {
-  width: auto;
-  float: left;
-  display: block;
+  width: 17%;
+  /*float: left;*/
+  /*display: block;*/
   text-align: left;
-  margin: 0 35px 0 0 !important;
+  margin: 0 2.5% 2.5% 0 !important;
   padding: 0;
   background: none;
-  height: 200px;
+  /*height: 200px;*/
 }
 
 #nav li.level1 > a {
