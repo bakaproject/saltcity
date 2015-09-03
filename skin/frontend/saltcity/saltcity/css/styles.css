@@ -419,7 +419,7 @@ body {
   text-indent: -999999px;
 }
 
-.footer-container .fb i {
+.footer-container .fb em {
   display: inline-block;
   float: right;
   width: 21px;
@@ -427,7 +427,7 @@ body {
   background: url(/media/social-icons.jpg) no-repeat 0 0;
 }
 
-.footer-container .tw i {
+.footer-container .tw em {
   display: inline-block;
   float: right;
   width: 21px;
@@ -435,7 +435,7 @@ body {
   background: url(/media/social-icons.jpg) no-repeat 0 -26px;
 }
 
-.footer-container .yt i {
+.footer-container .yt em {
   display: inline-block;
   float: right;
   width: 21px;
@@ -443,7 +443,7 @@ body {
   background: url(/media/social-icons.jpg) no-repeat 0 -52px;
 }
 
-.footer-container .gp i {
+.footer-container .gp em {
   display: inline-block;
   float: right;
   width: 21px;
@@ -451,7 +451,7 @@ body {
   background: url(/media/social-icons.jpg) no-repeat 0 -78px;
 }
 
-.footer-container .pt i {
+.footer-container .pt em {
   display: inline-block;
   float: right;
   width: 21px;
@@ -803,12 +803,42 @@ body {
 
 
 
-.cms-page-view {
-
+.cms-page-view .page-title {
+  width: 80%;
+  margin: 0 auto;
 }
-
+.cms-page-view .main {
+  text-align: left;
+  padding-bottom: 75px;
+}
+.cms-page-view .main .std {
+  width: 80%;
+  margin: 0 auto;
+}
+.cms-page-view h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.cms-page-view p {
+  font-size: 14px;
+  line-height: 16px
+}
 .cms-page-view .main-container, .cms-index-noroute .main-container {
   position: relative;
   z-index: 10;
 }
+.cms-locations .locationListing {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.cms-locations .locationListing h2:first-of-type {
+  margin-top: 0;
+}
+.cms-locations .left {
+  float: left;
+}
 
+.cms-locations .right {
+  float: right;
+}
