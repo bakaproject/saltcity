@@ -43,7 +43,7 @@
             <block type="cms/block" name="search_block_content" before="">
                 <action method="setBlockId"><block_id>search_block_content</block_id></action>
             </block>
-                <block type="page/switch" name="store_switcher_header" as="store_switcher_header" template="page/switch/stores.phtml"/>
+            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
         </reference>
         <reference name="top.links">
             <action method="removeLinkBlock"><blockName>wishlist_link</blockName></action>
@@ -53,6 +53,10 @@
             <block type="checkout/links" name="checkout_cart_link_custom">
                 <action method="addCartLink"></action>
             </block>
+        </reference>
+
+        <reference name="top.bar">
+            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
         </reference>
 
 
