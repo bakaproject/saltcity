@@ -21,6 +21,12 @@ body {
   height: 82px;
 }
 
+.header-container .header {
+  width: 858px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .header-container h2.logo, .catalog-category-view .header-container a.logo {
   width: 180px;
   margin: 10px 0 0 0 !important;
@@ -166,8 +172,7 @@ body {
 }
 
 .header div.quick-access {
-  left: 58%;
-  width: 325px;
+  width: 425px;
   padding: 0;
   margin: 21px 0 0 0;
 }
@@ -176,22 +181,37 @@ body {
   display: none;
 }
 
+.quick-access .phone {
+  float: left;
+
+}
 .quick-access ul.links {
   list-style: none;
   width: auto;
   clear: none;
   float: left;
   margin: 0;
+  padding: 0 0 14px 0;
 }
 
 .quick-access ul li {
   float: left;
 }
 
+.header .quick-access .links li {
+  padding: 0 20px 0 0;
+}
+
+.header .quick-access .links a:link, .header .quick-access .links a:visited {
+  background: none;
+}
+
 .header .quick-access .form-search, .header .quick-access #search_mini_form {
   width: 135px;
   margin: 0;
   padding: 0;
+  float: left;
+  clear: none;
 }
 
 .header .quick-access .form-search input.input-text {
@@ -212,6 +232,16 @@ body {
   right: 0;
   position: absolute;
   background: url(../images/search_btn.gif) no-repeat 0 0;
+}
+
+.header .quick-access .phone {
+  color: #2c2f33 !important;
+  text-transform: uppercase;
+  padding: 3px 34px 0 0;
+  height: 22px;
+  line-height: 25px;
+  font-weight: normal;
+  font: 11px Verdana, Helvetica, sans-serif;
 }
 
 .cms-index-index .home_page_header_block, .cms-home .home_page_header_block {
