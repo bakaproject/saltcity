@@ -887,3 +887,21 @@ body {
 .cms-locations .right {
   float: right;
 }
+
+.cms-infographics .info-link {
+  width: 40%;
+  height: 200px;
+  margin: 0 10% 50px 0;
+  float: left;
+  overflow: hidden;
+}
+
+.cms-infographics .info-link img {
+  width: 100%;
+}
+
+.cms-infographics .info-link h2 {
+  position: absolute;
+  top: 180%;
+  text-align: center;
+}
