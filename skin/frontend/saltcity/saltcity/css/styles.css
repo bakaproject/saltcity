@@ -237,7 +237,7 @@ body {
 .header .quick-access .phone {
   color: #2c2f33 !important;
   text-transform: uppercase;
-  padding: 3px 34px 0 0;
+  padding: 7px 34px 0 0;
   height: 22px;
   line-height: 25px;
   font-weight: normal;
@@ -872,27 +872,19 @@ body {
   position: relative;
   z-index: 10;
 }
-.cms-contact-us .locationListing {
+.cms-locations .locationListing {
   clear: both;
   overflow: hidden;
   margin-bottom: 50px;
 }
-.cms-contact-us .locationListing .left {
-  width: 30%;
-  float: left;
-}
-.cms-contact-us .locationListing .right {
-  width: 70%;
-  float: left;
-}
-.cms-contact-us .locationListing h2:first-of-type {
+.cms-locations .locationListing h2:first-of-type {
   margin-top: 0;
 }
-.cms-contact-us .left {
+.cms-locations .left {
   float: left;
 }
 
-.cms-contact-us .right {
+.cms-locations .right {
   float: right;
 }
 
