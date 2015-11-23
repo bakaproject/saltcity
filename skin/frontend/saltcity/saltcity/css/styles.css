@@ -125,7 +125,7 @@ body {
 }
 
 #nav ul.level1 {
-  padding: 0 0 15px 10px;
+  padding: 0 0 15px 10px !important;
 }
 
 #nav li.level1 {
