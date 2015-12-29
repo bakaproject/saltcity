@@ -846,7 +846,7 @@ select.multiselect option {
 .form-list label.required em {
 	font-style:normal;
 }
-/* REQUIRED BUTTON STYLES: */		
+/* REQUIRED BUTTON STYLES: */
 button.button {
 	position: relative;
 	border: 0 !important;
@@ -879,21 +879,22 @@ button.button span span {
  margin-top: -1px;
 }
 }
-/* OPTIONAL BUTTON STYLES for applying custom look and feel: */		
+/* OPTIONAL BUTTON STYLES for applying custom look and feel: */
 button.button {
 	padding: 0 11px 0 0;
-	font: 11px Tahoma, Helvetica, sans-serif;
+	font: 14px Tahoma, Helvetica, sans-serif;
 	text-align: center;
-	background: transparent url(../images/light_e_btn_split.gif) no-repeat right -64px;
-	height: 17px !important;
+	background: #818181;
+	height: 30px !important;
+	border-radius: 5px;
 }
 button.button span span {
-	padding: 2px 0 0 11px;
-	height: 17px;
-	background: transparent url(../images/light_e_btn_split.gif) no-repeat left top !important;
+	padding: 0 0 0 11px;
+	height: 30px;
+	/*background: transparent url(../images/light_e_btn_split.gif) no-repeat left top !important;*/
 	border: 0 !important;
-	color: #323232;
-	font: 11px Tahoma, Helvetica, sans-serif;
+	color: #fff;
+	font: 14px Tahoma, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 button.button:hover, button.buttonHover { /* the redundant class is used to apply the hover state with a script */
@@ -1138,7 +1139,7 @@ div.toolbar-bottom .limiter {
 .cart .crosssell .link-wishlist {
 	color: #313438 !important;
 }
-/* SMALL BUTTONS */		
+/* SMALL BUTTONS */
 .cart .discount button.button, .cart .shipping button.button, #shopping-cart-table button.button, .my-wishlist .buttons-set button.button, .block-compare button.button {
 	position: relative;
 	border: 0 !important;
@@ -1164,6 +1165,7 @@ div.toolbar-bottom .limiter {
 	display: block;
 	white-space: nowrap;
 	border: 0 !important;
+	padding-top: 0 !important;
 }
  @media screen and (-webkit-min-device-pixel-ratio:0) {
  .cart .discount button.button span {
@@ -1190,7 +1192,7 @@ div.toolbar-bottom .limiter {
  margin-top: -1px;
 }
 }
-/* custom look and feel: */		
+/* custom look and feel: */
 .cart .discount button.button, .cart .shipping button.button, #shopping-cart-table button.button, .my-wishlist .buttons-set button.button {
 	padding: 0 15px 0 0;
 	font: 11px Arial, Helvetica, sans-serif;
@@ -1202,27 +1204,47 @@ div.toolbar-bottom .limiter {
 	clear: both;
 }
 /***********************************************************CHECKOUT, ACCOUNT********************************/
+.opc .step {
+	border: 1px solid #538231 !important;
+}
+.opc .step-title {
+	background: #5b5b5b !important;
+	border-color: #5b5b5b !important;
+}
+.opc .active .step-title {
+	background: #538231 !important;
+	border-color: #538231 !important;
+}
+.opc .step-title h2{
+	color: #fff !important;
+}
+.opc .active .step-title h2{
+	color: #fff !important;
+}
 .opc .step-title h2 {
-	font:12px Arial, Helvetica, sans-serif;
-	font-weight: bold;
+	font:24px Arial, Helvetica, sans-serif;
+	font-weight: 700 !important;
+	color: #fff;
+	margin-left: 10px;
 }
 .opc .allow .step-title h2 {
-	color: #999;
+	color: #fff;
 }
 .opc .step-title .number {
-	background: #fff;
-	border: 1px solid #575757;
-	color: #999999;
+	background: none;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
 }
 .opc .allow .step-title .number {
 	background: #fff;
 	border: 1px solid #999999;
-	color: #999999;
 }
 .opc .active .step-title .number {
-	background:#d4d4d4;
-	border: 1px solid #3a3c40;
-	color:#3a3c40;
+	background:#fff;
+	border: none;
+	color:#538231;
 }
 .dashboard .box-reviews .number {
 	background: #fff;
@@ -1543,7 +1565,7 @@ div.f-1_left a span {
 	color: #bebebe !important;
 }
 /*dark*/
-.form-list label.required em, .opc .active .step-title h2, .sp-methods label .price, .box-account .box-head h2, .fieldset .legend, .account-login .new-users h2, .account-login .registered-users h2, .compare-table tr.first td .product-name a, .data-table tr td .product-name a {
+.form-list label.required em, .sp-methods label .price, .box-account .box-head h2, .fieldset .legend, .account-login .new-users h2, .account-login .registered-users h2, .compare-table tr.first td .product-name a, .data-table tr td .product-name a {
 	color: #000 !important;
 }
 .opc .step-title h2, .block-account .block-content li a, .page-sitemap .links a, .crosssell .product-name a {
@@ -1603,8 +1625,8 @@ input.input-text:focus, select:focus, textarea:focus {
 .validation-failed {
 	background:#cfcfd0 !important;
 }
-/*border - forms */ 
-.error-msg, .success-msg, .note-msg, .notice-msg, .data-table, .data-table thead th, .data-table tfoot, .data-table tbody th, .data-table tbody td, .data-table tfoot td, .opc .step, .opc .active .step-title, .opc .step-title, .buttons-set, .opc .allow .step-title, #opc-review .buttons-set, .box-account, .fieldset, .fieldset .legend, .addresses-list li.item, .compare-table tbody tr.last th, .compare-table tbody tr.last td, .advanced-search-summary, .account-login .content, .account-login .buttons-set, .account-login h2, .block-cart .subtotal, .product-options, .product-options-bottom, .order-info, .order-info-box, .data-table tbody th, .data-table tbody td, .tags-list {
+/*border - forms */
+.error-msg, .success-msg, .note-msg, .notice-msg, .data-table, .data-table thead th, .data-table tfoot, .data-table tbody th, .data-table tbody td, .data-table tfoot td, .buttons-set, #opc-review .buttons-set, .box-account, .fieldset, .fieldset .legend, .addresses-list li.item, .compare-table tbody tr.last th, .compare-table tbody tr.last td, .advanced-search-summary, .account-login .content, .account-login .buttons-set, .account-login h2, .block-cart .subtotal, .product-options, .product-options-bottom, .order-info, .order-info-box, .data-table tbody th, .data-table tbody td, .tags-list {
 	border-color: #dadada !important;
 }
 .data-table {
@@ -1649,7 +1671,7 @@ input.input-text:focus, select:focus, textarea:focus {
 	border: 1px solid #d9dde3;
 	padding: 12px 10px 12px 13px;
 }
-/*border blue  */ 
+/*border blue  */
 .mini-products-list .product-image, .products-list .product-image img, .product-view .product-img-box .more-views li a:hover {
 	border:1px solid #dce0e5;
 }
@@ -1667,7 +1689,7 @@ input.input-text:focus, select:focus, textarea:focus {
 	border-color: transparent;
 }
 /*Block poll*/
-/* REQUIRED BUTTON STYLES: */		
+/* REQUIRED BUTTON STYLES: */
 .block-poll button.button, .block-compare button.button {
 	position: relative;
 	border: 0 !important;
@@ -1709,7 +1731,7 @@ input.input-text:focus, select:focus, textarea:focus {
  margin-top: -1px;
 }
 }
-/* OPTIONAL BUTTON STYLES for applying custom look and feel: */		
+/* OPTIONAL BUTTON STYLES for applying custom look and feel: */
 .block-poll button.button, .block-compare button.button {
 	padding: 0 10px 0 0;
 }
@@ -1739,7 +1761,7 @@ color: #8F0509 !important;
 	text-decoration: none;
 }
 .link-cart:hover {
-	
+
 opacity: 0.9;
 filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
 }

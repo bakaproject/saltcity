@@ -399,3 +399,4 @@ exception.log
 system.log
 mage---internal-metadatas---718_Zend_LocaleC_en_US_currencytoregion_US
 var/cache/mage--f/mage---718_DB_PDO_MYSQL_DDL_log_visitor_info_1
+var/cache/mage--6/mage---718_CONFIGURATION_FILES_ACCESS_LEVEL_VERIFICATION
