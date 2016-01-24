@@ -49,7 +49,6 @@ Varien.Tabs.prototype = {
   initialize: function(selector) {
     var self=this;
     $$(selector+' a').each(this.initTab.bind(this));
-    console.log('init');
   },
 
   initTab: function(el) {

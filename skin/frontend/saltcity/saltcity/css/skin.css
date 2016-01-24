@@ -995,6 +995,7 @@ div.toolbar-bottom .limiter {
 }
 .product-view .product-img-box .more-views li {
 	margin:0 0 8px 12px;
+	float: left;
 }
 .product-view .product-img-box .more-views li a {
 	border: 1px solid #ffffff;
