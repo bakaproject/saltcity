@@ -550,6 +550,11 @@
   width: 20%;
   position: relative;
   z-index: 10;
+  border: none;
+}
+
+.catalog-category-view  .col2-left-layout .sidebar.col-left .block {
+  border: none;
 }
 
 .catalog-category-view .col2-left-layout .col-main {
@@ -559,6 +564,7 @@
   z-index: 10;
   box-sizing: border-box;
   padding: 0 30px;
+  border-left: 1px solid #d9dde3;
 }
 
 .catalog-category-view .pager ol, .col-left.sidebar .block-layered-nav ol {
@@ -918,9 +924,17 @@
   width: 80%;
   margin: 0 auto;
 }
-.cms-page-view .main {
+.cms-page-view .main, .cms-index-noroute .main {
   text-align: left;
   padding-bottom: 75px;
+  overflow: hidden;
+  float: left;
+}
+.cms-index-noroute .main {
+  margin: 0 30px;
+}
+.cms-index-noroute .main dd {
+  margin: 0;
 }
 .cms-page-view .main .std {
   width: 80%;
@@ -985,15 +999,47 @@
   margin: 0 30px 100px;
   text-align: left;
   float: left;
+  width: 100%;
+}
+
+.customer-account-create .main form {
+  clear: both;
+  overflow: hidden;
+  display: block;
 }
 
 .customer-account-login .col-1, .customer-account-login .col-2 {
   width: 45%;
+  margin-right: 2.5%;
+  float: left;
+}
+
+.customer-account-create .main form .fieldset {
+  width: 40%;
   margin-right: 5%;
   float: left;
 }
 
-.customer-account-login ul, .customer-account-create ul {
+.customer-account-create .main .buttons-set {
+  clear: both;
+}
+
+.customer-account-create .main .buttons-set p.required {
+  width: 100%;
+  clear: both;
+}
+
+.customer-account-create .main .buttons-set p.back-link {
+  float: left;
+  margin-right: 20px;
+}
+
+.customer-account-create .main .buttons-set p.back-link a.back-link {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.customer-account-login .main ul, .customer-account-create .main ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1003,8 +1049,26 @@
   height: 30px;
   padding: 0 10px;
   margin: 0 0 10px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+.customer-account-login .main ul.form-list li.control, .customer-account-create .main ul.form-list li.control {
+  clear: both;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.customer-account-login .main ul.form-list li.control .input-box, .customer-account-create .main ul.form-list li.control .input-box {
+  float: left;
+}
+
+.customer-account-login .main ul.form-list li.control label, .customer-account-create .main ul.form-list li.control label {
+  float: left;
+  line-height: 30px;
+  padding-left: 20px;
+}
 
 /**/
 /**/
