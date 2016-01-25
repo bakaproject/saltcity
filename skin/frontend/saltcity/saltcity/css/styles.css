@@ -1450,12 +1450,7 @@
   border-top: 1px solid #ccc !important;
 }
 .opc li.section .buttons-set p.required {
-  position: absolute;
-  padding: 0;
-  bottom: 24px;
-  left: 50%;
-  width: 200px;
-  margin-left: -111px;
+  width: 100%;
   text-align: center;
 }
 .opc li.section button.button {
