@@ -103,7 +103,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 858px;
-  height: 450px;
+  height: 455px;
   position: absolute;
   left: 50%;
   top: 35px;
@@ -131,7 +131,7 @@
 }
 
 #nav li.level1 {
-  width: 25%;
+  width: 22.5%;
   /*float: left;
   /*display: block;*/
   text-align: left;
