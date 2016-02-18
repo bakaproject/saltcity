@@ -780,6 +780,10 @@
   padding: 0 10px;
 }
 
+.catalog-product-view .add-to-box {
+  margin: 20px 0;
+}
+
 .catalog-product-view .add-to-cart button.btn-cart {
   padding: 0 20px;
 }
@@ -796,6 +800,10 @@
 
 .catalog-product-view .add-to-cart button.btn-cart span span {
   padding-left: 0;
+}
+
+.catalog-product-view .add-to-cart .or {
+  display: none;
 }
 
 .catalog-product-view .col-right.sidebar {
@@ -862,11 +870,16 @@
   margin: 20px 0 40px;
   padding-left: 0;
   float: left;
+  width: 100%;
 }
 
 .add-to-links li {
   display: inline-block;
   float: left;
+}
+
+.add-to-links .separator {
+  margin: 0 10px 0 14px;
 }
 
 /* Product Tabs */
