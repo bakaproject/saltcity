@@ -127,6 +127,22 @@
   clear: both;
 }
 
+#nav .level-top.nav-2:hover > ul.level0 {
+  height: 415px;
+}
+
+#nav .level-top.nav-3:hover > ul.level0 {
+  height: 320px;
+}
+
+#nav .level-top.nav-4:hover > ul.level0 {
+  height: 200px;
+}
+
+#nav .level-top.nav-5:hover > ul.level0, #nav .level-top.nav-6:hover > ul.level0 {
+  height: 175px;
+}
+
 #nav ul.level1 {
   padding: 0 0 15px 10px !important;
 }
