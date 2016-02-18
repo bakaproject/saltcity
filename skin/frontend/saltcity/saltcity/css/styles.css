@@ -100,6 +100,7 @@
 
 #nav .level-top:hover > ul.level0 {
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
   width: 858px;
@@ -715,10 +716,11 @@
   clear: both;
 }
 
-.catalog-product-view .col1-layout .col-main, .catalog-product-view .col2-right-layout .col-main {
+.catalog-product-view .col1-layout .col-main, .catalog-product-view .col2-right-layout .col-main, .cms-page-view .main {
   width: calc(100% - 20px);
   margin: 30px auto 0;
   float: none;
+  display: block;
 }
 
 .catalog-product-view .col1-layout .col-main .product-view, .catalog-product-view .col2-right-layout .col-main .product-view {
@@ -924,7 +926,7 @@
   width: 80%;
   margin: 0 auto;
 }
-.cms-page-view .main, .cms-index-noroute .main {
+.cms-index-noroute .main {
   text-align: left;
   padding-bottom: 75px;
   overflow: hidden;
