@@ -194,7 +194,7 @@
 }
 
 .header div.quick-access {
-  width: 435px;
+  width: 480px;
   padding: 0;
   margin: 21px 0 0 0;
 }
@@ -204,20 +204,20 @@
 }
 
 .quick-access .phone {
-  float: left;
+  float: right;
 
 }
 .quick-access ul.links {
   list-style: none;
   width: auto;
   clear: none;
-  float: left;
+  float: right;
   margin: 0;
   padding: 0 14px 14px 0;
 }
 
 .quick-access ul li {
-  float: left;
+  float: right;
 }
 
 .header .quick-access .links li {
@@ -1662,4 +1662,17 @@
 
 .messages .error-msg span {
   color: white;
+}
+
+
+.cms-diy1g-faq .diy-question {
+  text-align: left;
+  padding: 30px 0;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+.cms-diy1g-faq .diy-answer {
+  text-align: left;
+  padding: 30px 0;
+  border-bottom: 1px solid #a5a5a5;
 }
