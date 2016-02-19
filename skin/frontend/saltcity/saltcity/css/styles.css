@@ -217,7 +217,7 @@
 }
 
 .quick-access ul li {
-  float: right;
+  float: left;
 }
 
 .header .quick-access .links li {
