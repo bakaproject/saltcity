@@ -1671,6 +1671,8 @@
   padding: 20px 0;
   border-bottom: 1px solid #a5a5a5;
   font-weight: 600;
+  font-size: 14px;
+  padding-left: 20px;
 }
 
 .cms-diy1g-faq .diy-question.last {
