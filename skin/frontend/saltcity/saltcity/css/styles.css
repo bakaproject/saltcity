@@ -205,7 +205,7 @@
 
 .quick-access .phone {
   float: right;
-
+  line-height: 16px;
 }
 .quick-access ul.links {
   list-style: none;
@@ -218,6 +218,7 @@
 
 .quick-access ul li {
   float: left;
+  line-height: 17px;
 }
 
 .header .quick-access .links li {
