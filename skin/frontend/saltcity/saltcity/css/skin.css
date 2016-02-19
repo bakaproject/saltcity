@@ -572,6 +572,9 @@ div.top_static a:hover {
 	background: #538231;
 
 }
+.block-cart .actions button:hover {
+	color: #d2ebc1;
+}
 .block-cart .block-subtitle {
 	margin-top: 30px;
 	font-weight: 600;
@@ -583,7 +586,7 @@ div.top_static a:hover {
 	margin: 0;
 	padding: 0;
 }
-.block-cart li {
+.block-cart li.item {
 	padding: 0 0 10px 0;
 }
 .block-cart .mini-products-list .product-details {
