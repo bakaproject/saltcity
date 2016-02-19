@@ -1,0 +1,13 @@
+<?php
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2010-2012 Amasty (http://www.amasty.com)
+* @package Amasty_Easyblocks
+*/
+?>
+<div class="ameasyblocks-<?php echo $this->getPlaceholder()->getAlias(); ?>" 
+      style="padding: 0px; margin: 0px;<?php if ($this->getPlaceholder()->getWidth()): ?> width: <?php echo $this->getPlaceholder()->getWidth(); ?>;<?php endif; ?><?php if ($this->getPlaceholder()->getHeight()): ?> height: <?php echo $this->getPlaceholder()->getHeight(); ?>;<?php endif; ?>">
+      
+    <?php echo $this->getPlaceholder()->getBlockContent(); ?>
+    
+</div>
