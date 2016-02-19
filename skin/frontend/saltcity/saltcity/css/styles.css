@@ -586,7 +586,7 @@
 }
 
 .page-title.category-title {
-  display: none;
+  display: none !important;
 }
 
 .catalog-category-view .pager ol, .col-left.sidebar .block-layered-nav ol {
