@@ -199,13 +199,13 @@
   margin: 21px 0 0 0;
 }
 
-.quick-access .welcome-msg, .quick-access .switchers {
+.header .quick-access .welcome-msg, .header .quick-access .switchers {
   display: none;
 }
 
-.quick-access .phone {
+.header .quick-access .phone {
   float: right;
-  line-height: 16px;
+  padding-top: 4px;
 }
 .quick-access ul.links {
   list-style: none;
