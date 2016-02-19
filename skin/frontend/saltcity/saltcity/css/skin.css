@@ -58,6 +58,7 @@ p {
 .wrapper {
 	min-width: 1084px;
 	position: relative;
+	overflow: hidden;
 }
 .wrapper:after {
 	content: '';
