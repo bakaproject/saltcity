@@ -1,10 +1,9 @@
-var $j = jQuery.noConflict(); 
-
-console.log('working?', $j);
+var $j = jQuery.noConflict();
 
 $j(document).ready(function() {
   $j('.main_slider').tinycarousel({
-    interval: true
+    interval: true,
+    intervalTime: 5000
   });
 
   $j('.product-slider-container').tinycarousel({
