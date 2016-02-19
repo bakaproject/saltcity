@@ -589,7 +589,7 @@ div.top_static a:hover {
 .block-cart .mini-products-list .product-details {
 	margin: 0;
 }
-.block-cart li .mini-products-list .product-details a {
+.block-cart .mini-products-list .product-details a {
 	width: 100%;
 	clear: both;
 	display: block;
