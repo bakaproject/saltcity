@@ -586,7 +586,7 @@ div.top_static a:hover {
 .block-cart li {
 	padding: 0 0 10px 0;
 }
-.block-cart li .mini-products-list .product-details {
+.block-cart .mini-products-list .product-details {
 	margin: 0;
 }
 .block-cart li .mini-products-list .product-details a {
