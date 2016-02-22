@@ -635,12 +635,37 @@
   text-align: left;
 }
 
-.col-left.sidebar > .block {
-  border-style: none solid none none;
+.col-left.sidebar > .block, .col-left.sidebar > .block-content, .col-left.sidebar > form {
+  border-style: none;
   padding: 20px 15px 0 15px;
   margin: 0;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.col-left.sidebar > .block-content {
+  border-style: none;
+  padding: 5px 15px 0 15px;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.col-left.sidebar > form label {
+  font-weight: 700;
+}
+
+.col-left.sidebar > form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 5px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.col-left.sidebar > form button {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .col-left.sidebar .block-title {
