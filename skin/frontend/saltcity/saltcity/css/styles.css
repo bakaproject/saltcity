@@ -99,9 +99,13 @@
 }
 
 #nav .level-top:hover > ul.level0 {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-content: flex-start;
   align-content: flex-start;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-flex-direction: column;
   flex-direction: column;
   width: 858px;
   height: 520px;
@@ -1840,7 +1844,9 @@ box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px;
   position: absolute;
   top: 50%;
   left: 50px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+          transform: translateY(-50%);
   line-height: 15px;
 }
 .listing .stars {
