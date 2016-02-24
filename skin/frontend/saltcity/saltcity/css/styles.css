@@ -381,7 +381,9 @@
   box-shadow: 0 0 10px #ccc;
   background: #fff;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /*.product-slider {
