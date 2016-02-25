@@ -716,6 +716,12 @@
   min-height: 275px !important;
   margin-bottom: 30px;
 }
+
+.catalogsearch-result-index .products-grid > li {
+  width: 20%;
+  padding: 0 2.5%;
+}
+
 .col2-left-layout .category-products .products-grid .add-to-links {
   display: none;
 }
@@ -723,16 +729,16 @@
 .col2-left-layout .category-products .sort-by {
   display: none;
 }
-.catalog-category-view .products-grid a.product-image {
+.catalog-category-view .products-grid a.product-image, .catalogsearch-result-index .products-grid a.product-image {
   border: none;
 }
 
-.catalog-category-view .products-grid .product-image img {
+.catalog-category-view .products-grid .product-image img, .catalogsearch-result-index .products-grid .product-image img {
   width: 100%;
   height: auto;
 }
 
-.catalog-category-view .toolbar-bottom {
+.catalog-category-view .toolbar-bottom, .catalogsearch-result-index .toolbar-bottom {
   clear: both;
 }
 
