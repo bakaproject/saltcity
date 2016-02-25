@@ -538,11 +538,11 @@
 /* CATEGORY PAGE */
 /*////////////////*/
 
-.catalog-category-view .main-container {
+.catalog-category-view .main-container, .catalogsearch-result-index .main-container {
   margin: 0 auto;
 }
 
-.catalog-category-view .main-container ul {
+.catalog-category-view .main-container ul, .catalogsearch-result-index .main-container ul {
   list-style: none;
 }
 
@@ -570,18 +570,18 @@
   float: left;
 }
 
-.catalog-category-view  .col2-left-layout .sidebar.col-left {
+.catalog-category-view .col2-left-layout .sidebar.col-left, .catalogsearch-result-index .col2-left-layout .sidebar.col-left, {
   width: 20%;
   position: relative;
   z-index: 10;
   border: none;
 }
 
-.catalog-category-view  .col2-left-layout .sidebar.col-left .block {
+.catalog-category-view  .col2-left-layout .sidebar.col-left .block, .catalogsearch-result-index .col2-left-layout .sidebar.col-left .block {
   border: none;
 }
 
-.catalog-category-view .col2-left-layout .col-main {
+.catalog-category-view .col2-left-layout .col-main, .catalogsearch-result-index .col2-left-layout .col-main {
   width: 80%;
   float: right;
   position: relative;
@@ -595,45 +595,45 @@
   display: none !important;
 }
 
-.catalog-category-view .pager ol, .col-left.sidebar .block-layered-nav ol {
+.catalog-category-view .pager ol, .col-left.sidebar .block-layered-nav ol, .catalogsearch-result-index .pager ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.catalog-category-view p.category-image img {
+.catalog-category-view p.category-image img, .catalogsearch-result-index p.category-image img {
   width: 100%;
 }
 
-.catalog-category-view .pager li {
+.catalog-category-view .pager li, .catalogsearch-result-index .pager li {
   display: inline-block;;
   font-size: 13px;
   font-weight: 700;
   padding: 0 2px;
 }
 
-.catalog-category-view .pager li a {
+.catalog-category-view .pager li a, .catalogsearch-result-index .pager li a {
   text-decoration: none;
 }
 
-.catalog-category-view .pager .amount {
+.catalog-category-view .pager .amount, .catalogsearch-result-index .pager .amount {
   margin: 0;
 }
 
-.catalog-category-view .pager .limiter {
+.catalog-category-view .pager .limiter, .catalogsearch-result-index .pager .limiter {
   padding: 0;
 }
 
-.catalog-category-view .toolbar-bottom .limiter {
+.catalog-category-view .toolbar-bottom .limiter, .catalogsearch-result-index .toolbar-bottom .limiter {
   float: none;
 }
 
-.catalog-category-view .pager .pages {
+.catalog-category-view .pager .pages, .catalogsearch-result-index .pager .pages {
   padding: 0;
   margin: 15px 0 30px;
 }
 
-.catalog-category-view .pager .pages strong {
+.catalog-category-view .pager .pages strong, .catalogsearch-result-index .pager .pages strong {
   display: none;
 }
 
