@@ -327,7 +327,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
 .header .quick-access {
 	padding: 0px 28px 0px 0px;
 	margin-top: 10px;
-	width: 600px;
+	/*width: 600px;*/
 	position: absolute;
 	text-align: center;
 	right: 0;
@@ -1861,13 +1861,13 @@ p.more_themes a:hover {
 	margin: 0px 0px 0px 0px;
 }
 p.phone {
-	color: #34363a;
+	/*color: #34363a;*/
 	font-size: 14px;
 	font-family: "Times New Roman", Times, serif;
 	font-weight: bold;
 }
 p.phone strong {
-	color: #8f0509;
+	/*color: #8f0509;*/
 	font-size: 32px;
 	font-family: "Times New Roman", Times, serif;
 	font-weight: normal;

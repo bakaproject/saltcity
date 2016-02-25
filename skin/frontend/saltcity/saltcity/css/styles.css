@@ -198,7 +198,7 @@
 }
 
 .header div.quick-access {
-  width: 480px;
+  /*width: 480px;*/
   padding: 0;
   margin: 21px 0 0 0;
 }
@@ -262,7 +262,7 @@
 }
 
 .header .quick-access .phone {
-  color: #2c2f33 !important;
+  /*color: #2c2f33 !important;*/
   text-transform: uppercase;
   padding: 3px 34px 0 0;
   height: 22px;
