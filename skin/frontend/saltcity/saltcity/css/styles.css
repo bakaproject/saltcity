@@ -570,14 +570,15 @@
   float: left;
 }
 
-.catalog-category-view .col2-left-layout .sidebar.col-left, .catalogsearch-result-index .col2-left-layout .sidebar.col-left, {
+.catalog-category-view .col2-left-layout .col-main
+.catalog-category-view .col2-left-layout .col-left, .catalogsearch-result-index .col2-left-layout .col-left, {
   width: 20%;
   position: relative;
   z-index: 10;
   border: none;
 }
 
-.catalog-category-view  .col2-left-layout .sidebar.col-left .block, .catalogsearch-result-index .col2-left-layout .sidebar.col-left .block {
+.catalog-category-view  .col2-left-layout .col-left .block, .catalogsearch-result-index .col2-left-layout .col-left .block {
   border: none;
 }
 
@@ -1097,29 +1098,38 @@
 .customer-account-create .main .buttons-set {
   clear: both;
 }
-
-.customer-account-create .main .buttons-set p.required {
-  width: 100%;
-  clear: both;
+.customer-account-forgotpassword .buttons-set p.required {
+  margin: 0 auto 30px;
 }
 
-.customer-account-create .main .buttons-set p.back-link {
+.customer-account-create .main .buttons-set p.required, .customer-account-forgotpassword .buttons-set p.required {
+  width: 100%;
+  clear: both;
+  text-align: left;
+}
+
+.customer-account-create .main .buttons-set p.back-link, .customer-account-forgotpassword .buttons-set p.back-link {
   float: left;
   margin-right: 20px;
 }
-
-.customer-account-create .main .buttons-set p.back-link a.back-link {
+.customer-account-forgotpassword .buttons-set p.back-link {
+  margin-left: 25%;
+}
+.customer-account-forgotpassword .buttons-set button.button {
+  float: left;
+}
+.customer-account-create .main .buttons-set p.back-link a.back-link, .customer-account-forgotpassword .buttons-set p.back-link a {
   line-height: 30px;
   font-size: 14px;
 }
 
-.customer-account-login .main ul, .customer-account-create .main ul {
+.customer-account-login .main ul, .customer-account-create .main ul, .customer-account-forgotpassword .main ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.customer-account-login input, .customer-account-create input {
+.customer-account-login input, .customer-account-create input, .customer-account-forgotpassword input {
   height: 30px;
   padding: 0 10px;
   margin: 0 0 10px 0;
@@ -1142,6 +1152,15 @@
   float: left;
   line-height: 30px;
   padding-left: 20px;
+}
+
+.customer-account-forgotpassword .fieldset, .customer-account-forgotpassword .buttons-set {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.customer-account-forgotpassword form li {
+  text-align: left;
 }
 
 /**/
@@ -1884,5 +1903,119 @@ box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px;
   margin-top: 40px;
 }
 .listing .hours {
+  float: left;
+}
+
+
+/**/
+/**/
+/* ACCOUNT STYLING */
+/**/
+/**/
+.customer-account-index .col2-left-layout .col-left,
+.customer-address-index .col2-left-layout .col-left,
+.customer-account-edit .col2-left-layout .col-left,
+.sales-order-history .col2-left-layout .col-left,
+.sales-billing-agreement-index .col2-left-layout .col-left,
+.sales-recurring-profile-index .col2-left-layout .col-left,
+.review-customer-index .col2-left-layout .col-left,
+.wishlist-index-index .col2-left-layout .col-left,
+.oauth-customer-token-index .col2-left-layout .col-left,
+.newsletter-manage-index .col2-left-layout .col-left,
+.downloadable-customer-products .col2-left-layout .col-left {
+  width: 20%;
+  float: right;
+  border-right: 1px solid #d9dde3;
+  box-sizing: border-box;
+}
+.customer-account-index .col2-left-layout .col-main,
+.customer-address-index .col2-left-layout .col-main,
+.customer-account-edit .col2-left-layout .col-main,
+.sales-order-history .col2-left-layout .col-main,
+.sales-billing-agreement-index .col2-left-layout .col-main,
+.sales-recurring-profile-index .col2-left-layout .col-main,
+.review-customer-index .col2-left-layout .col-main,
+.wishlist-index-index .col2-left-layout .col-main,
+.oauth-customer-token-index .col2-left-layout .col-main,
+.newsletter-manage-index .col2-left-layout .col-main,
+.downloadable-customer-products .col2-left-layout .col-main {
+  width: 80%;
+  float: right;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+.my-account .box-account.box-info {
+  text-align: left;
+}
+.my-account .col2-set{
+  float: left;
+  width: 100%;
+}
+.my-account .col2-set .col-1,
+.my-account .col2-set .col-2,
+.my-account .fields .field {
+  width: 45%;
+  margin-right: 5%;
+  float: left;
+  text-align: left;
+}
+.my-account .col2-set .col-2,
+.my-account .fields .field:last-of-type {
+  margin-right: 0;
+}
+.my-account ul,
+.my-account ol,
+.col-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.my-account .col2-set li{
+  margin: 0 0 40px 0;
+}
+.my-account h2{
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.my-account label {
+  text-align: left;
+  float: left;
+  margin-top: 30px;
+}
+
+.my-account input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 5px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.my-account input[type="checkbox"] {
+  width: auto;
+  float: left;
+}
+
+.my-account li.control label {
+  margin-top: 0;
+  line-height: 30px;
+  margin: 10px 0 5px 10px;
+}
+.my-account p.required {
+  width: 100%;
+  clear: both;
+  text-align: left;
+}
+.my-account p.back-link {
+  float: left;
+  margin-right: 20px;
+  margin-left: 40%;
+}
+.my-account p.back-link a {
+  line-height: 30px;
+  font-size: 14px;
+}
+.my-account button.button {
   float: left;
 }
