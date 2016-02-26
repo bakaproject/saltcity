@@ -96,4 +96,12 @@
             <action method="setTemplate"><template>page/1column.phtml</template></action>
         </reference>
     </catalogsearch_result_index>
+    <cms_index_defaultnoroute>
+        <remove name="right"/>
+        <remove name="left"/>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+
+    </cms_index_defaultnoroute>
 </layout>

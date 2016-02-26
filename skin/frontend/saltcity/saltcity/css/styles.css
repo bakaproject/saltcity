@@ -2040,3 +2040,18 @@ box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px;
   margin: 8px 0;
   font-size: 14px;
 }
+
+.cms-index-noroute .col1-layout .main, .cms-no-route .col1-layout .main {
+  width: 80%;
+  margin: 0 auto;
+  float: none;
+}
+.cms-index-noroute .col1-layout h1, .cms-no-route .col1-layout h1 {
+  text-align: center;
+}
+
+.cms-index-noroute .col1-layout .main dl, .cms-no-route .col1-layout .main dl {
+  width: 70%;
+  margin: 0 auto 50px;
+  font-size: 14px;
+}
