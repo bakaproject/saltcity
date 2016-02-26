@@ -1984,23 +1984,34 @@ box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px;
   margin-top: 30px;
 }
 
-.my-account input {
+.my-account .field .input-box input {
   width: 100%;
   height: 30px;
   margin: 10px 0 5px;
   padding: 0 5px;
   box-sizing: border-box;
 }
+.my-account .input-box input {
+  width: 95%;
+  height: 30px;
+  margin: 10px 0 5px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  float: left;
+}
 
 .my-account input[type="checkbox"] {
   width: auto;
   float: left;
 }
-
+.my-account li.control {
+  width: 100%;
+  clear: both;
+}
 .my-account li.control label {
   margin-top: 0;
-  line-height: 30px;
-  margin: 10px 0 5px 10px;
+  /*line-height: 30px;*/
+  margin: 3px 0 5px 5px;
 }
 .my-account p.required {
   width: 100%;
@@ -2016,6 +2027,16 @@ box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px;
   line-height: 30px;
   font-size: 14px;
 }
+.my-account .buttons-set {
+  clear: both;
+}
 .my-account button.button {
   float: left;
+}
+
+.out-of-stock, .product-view .product-shop .out-of-stock.availability {
+  color: #ae0000;
+  font-weight: 700;
+  margin: 8px 0;
+  font-size: 14px;
 }
