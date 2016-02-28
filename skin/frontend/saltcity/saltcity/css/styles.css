@@ -892,7 +892,7 @@
 .catalog-product-view .product-options dd {
   margin: 0 0 0 0;
   border-bottom: 2px solid #f5f5f5;
-  padding: 0 0 15px 10px;
+  padding: 0 0 5px 10px;
 }
 
 .catalog-product-view .product-options .price-notice .price {
@@ -918,10 +918,9 @@
 .add-to-links {
   display: block;
   margin: 20px 0 40px;
+  padding-left: 0;
   float: left;
   width: 100%;
-  width: 528px;
-  padding: 0 25px 0 35px;
 }
 
 .add-to-links li {

@@ -869,7 +869,8 @@
   border: none;
 }
 
-.catalog-product-view .product-options {
+.catalog-product-view .product-options,
+.catalog-product-view .product-options-bottom {
   width: 528px;
   padding: 0 25px 0 35px;
   box-sizing: border-box;
@@ -886,7 +887,7 @@
 .catalog-product-view .product-options dd {
   margin: 0 0 0 0;
   border-bottom: 2px solid #f5f5f5;
-  padding: 0 0 15px 10px;
+  padding: 0 0 5px 10px;
 }
 
 .catalog-product-view .product-options .price-notice .price {
