@@ -870,7 +870,8 @@
   border: none;
 }
 
-.catalog-product-view .product-options {
+.catalog-product-view .product-options,
+.catalog-product-view .product-options-bottom {
   width: 528px;
   padding: 0 25px 0 35px;
   box-sizing: border-box;
@@ -879,13 +880,8 @@
   float: right;
 }
 
-.catalog-product-view .product-view .product-shop {
-  width: 528px;
-  /*width: 494px;*/
-  float: right;
-  text-align: left;
-  padding: 0 25px 0 35px;
-  box-sizing: border-box;
+.catalog-product-view .product-options-bottom .price-box {
+  display: none;
 }
 
 .catalog-product-view .product-options dt {
@@ -922,9 +918,10 @@
 .add-to-links {
   display: block;
   margin: 20px 0 40px;
-  padding-left: 0;
   float: left;
   width: 100%;
+  width: 528px;
+  padding: 0 25px 0 35px;
 }
 
 .add-to-links li {
